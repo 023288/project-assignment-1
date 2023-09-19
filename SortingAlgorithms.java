@@ -150,11 +150,11 @@ public class SortingAlgorithms {
 		
 		while (leftIndex < left.length && rightIndex < right.length) {
 			
-			if (left[leftIndex] < right[rightIndex]) {
-				arr[index++] = left[leftIndex++];
+			if (left[leftIndex] > right[rightIndex]) {
+				arr[index++] = right[rightIndex++];				
 			}
 			else {
-				arr[index++] = right[rightIndex++];				
+				arr[index++] = left[leftIndex++];
 			}
 		}
 
